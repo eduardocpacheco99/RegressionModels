@@ -1,0 +1,29 @@
+---
+title: "Regression Models Project: Motor Trend"
+output: github_document
+author: "Eduardo Pacheco"
+Date: "September, 10, 2018"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Executive Summary
+
+we will examine the mtcars data set and explore how miles per gallon (MPG) is affected by different variables. In particularly, we will answer the following two questions: 
+1. Is an automatic or manual transmission better for MPG, and
+2. Quantify the MPG difference between automatic and manual transmissions.
+
+From our analysis we can show that manual transmission has an MPG 1.8 greater than an automatic transmission.
+
+# Exploratory Data ANalysis
+
+First have a look on the first three lines of the data “mtcars”, described in this link ( https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html) and its structure:
+
+```{r}
+library(ggplot2) #for plots
+data(mtcars)
+head(mtcars)
+```
+
